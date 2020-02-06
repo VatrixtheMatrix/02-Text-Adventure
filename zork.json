@@ -1,0 +1,124 @@
+{
+	"START": {
+		"name": "Beginning",
+		"desc": "You are a explorer, looking for a treasure located in the center of a temple you just entered.\n Through this main entrance you find three entry ways ahead standing side by side.\n Labeled as L-Entry, C-Entry, and R-entry for their appropiate entry points.\n Which one do you take? LEFT? CENTER? or RIGHT?",
+		"exits": [{
+			"exit": "LEFT",
+			"target": "LENRTY"
+		}, {
+			"exit": "CENTER",
+			"target": "CENTRY"
+		}, {
+			"exit": "RIGHT",
+			"target": "RENTRY"
+		}],
+		"items": []
+	},
+	"LENTRY": {
+		"name": "Left way entry",
+		"desc": "You take the left hand corridor,\n looks like there is a chamber at the end of it.\n Do you CONTINUE or do you RETURN to the entry?.",
+		"exits": [{
+			"exit": "CONTINUE",
+			"target": "LCHAMBER"
+		}, {
+			"exit": "RETURN",
+			"target": "START"
+		}],
+		"items": []
+	},
+	"CENTRY": {
+		"name": "Center Entry",
+		"desc": "You take the center corridor,\n looks like there is a chamber at the end of it.\n Do you CONTINUE or do you RETURN to the entry?",
+		"exits": [{
+			"exit": "CONTINUE",
+			"target": "CCHAMBER"
+		}, {
+			"exit": "RETURN",
+			"target": "START"
+		}, {
+		}],
+		"items": []
+	},
+	"RENTRY": {
+		"name": "Right Side Entry",
+		"desc": "You take the right hand corridor,\n looks like there is a chamber at the end of it.\n Do you CONTINUE or do you RETURN to the entry?",
+		"exits": [{
+			"exit": "CONTINUE",
+			"target": "RCHAMBER"
+		}, {
+			"exit": "RETURN",
+			"target": "ENTRY"
+		}, {
+		}],
+		"items": []
+	},
+	"LCHAMBER": {
+		"name": "Left Chamber",
+		"desc": "You have entered the left chamber.\n On the other end is the entrance to a slide you almost missed covered in vines.\n Do you ENTER the slide?\n Or do you RETURN back to the left corridor?",
+		"exits": [{
+			"exit": "ENTER",
+			"target": "TSLIDE"
+		}, {
+			"exit": "RETURN",
+			"target": "LENTRY"
+		}],
+		"items": []
+	},
+	"CCHAMBER": {
+		"name": "Center Chamber",
+		"desc": "You enter the center chamber only to have a stone door close behind you, locking you in.\n When you look ahead you see some kind of stone golem sentry activate.\n In the mist of your panic, that this room is design to destroy intruders,\n or whoever designed this temple has a sick sense of pun humor\n for planting a SENRTY in a room called C-ENTRY.\n You have two options, do you stay your ground anf fight,\n or do you look for a way to ESCAPE?\n Type FIGHT or ESCAPE to decide you course of action.",
+		"exits": [{
+			"exit": "FIGHT",
+			"target": "DEATH"
+		}, {
+			"exit": "ESCAPE",
+			"target": "ESCAPE"
+		}],
+		"items": []
+	},
+	"RCHAMBER": {
+		"name": "Right Chamber",
+		"desc": "You have entered the right chamber and the only thing is a odd looking doorway that has some reflective distorted enrty within it.\n You decide to touch it only to be greeted with a blinding light. \n When it fades, you find yourself back at the main entrance. \n Dumbfounded and confused on what just happended until it hit you.\n The R-Entry sign meant RE-ENTRY.\n Press NEXT to continue.",
+		"exits": [{
+			"exit": "NEXT",
+			"target": "START"
+		}],
+		"items": []
+	},
+	"ESCAPE": {
+		"name": "Forest",
+		"desc": "This is a forest, with trees in all directions around you.",
+		"exits": [{
+			"exit": "NEXT",
+			"target": "TSLIDE"
+		}],
+		"items": []
+	},
+	"DEATH": {
+		"name": "Fight with Golem",
+		"desc": "You stand you ground and attempt to fight the golem.\n But only to get smashed. You are dead.\n Do you want to play again? YES or NO.",
+		"exits": [{
+			"exit": "YES",
+			"target": "START"
+		}, {
+			"exit": "NO",
+			"target": []
+		}],
+		"items": []
+	},
+	"TSLIDE": {
+		"name": "Slide",
+		"desc": "You slide down the cold slimy stone slide at high speed.\n Press NEXT to continue.",
+		"exits": [{
+			"exit": "NEXT",
+			"target": "TREASURE"
+		}],
+		"items": []
+	},
+	"TREASURE": {
+		"name": "Treasure Room",
+		"desc": "You come down the slide to see yourself the treasure you seek with a secrect exit on the other end.\n Congradulations! You Win!",
+		"exits": [],
+		"items": []
+	}
+}

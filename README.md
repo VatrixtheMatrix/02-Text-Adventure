@@ -1,1 +1,1 @@
-# 02-Text-Adventure
+This is Phillip Cullison's 02-Text-Adventure assignment. This is a text-based adventure revolving around an explorer ventureing through a temple to find some treasure.
